@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AiOutlineCaretUp, AiOutlineCaretDown } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 export default function Temperature() {
@@ -110,9 +111,9 @@ export default function Temperature() {
         <div className='temperature bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 min-h-screen flex items-center justify-center'>
             <div className='container flex flex-row md:justify-center '>
                 <div className='flex flex-col w-80 mt-10 md:mt-6'>
-                    <a href='/'>
+                    <Link to='/'>
                         <button className='bg-transparent border text-white rounded-full px-6 py-3 mb-4 md:mr-3 hover:bg-blue-700 hover:border-blue-700 hover:text-gray-200 transition duration-300 transform hover:scale-105'>Home</button>
-                    </a>
+                    </Link>
                     <div className='calcBox relative flex flex-col h-96 bg-blue-300 bg-opacity-60 border border-blue-500 rounded-2xl p-6 mb-6 text-center shadow-lg'>
                         <h1 className='relative mb-4 -mt-4 w-full p-4 border-b text-xl text-white'>Temperature Converter</h1>
                         <div className='unitOne relative flex items-center'> 
