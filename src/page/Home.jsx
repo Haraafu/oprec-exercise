@@ -22,7 +22,9 @@ export default function Home() {
                         <Link to='/currency'>
                             <button className='bg-transparent border w-full text-white rounded-full px-6 py-3 mb-4 md:mr-3 hover:bg-blue-700 hover:border-blue-700 hover:text-gray-200 transition duration-300 transform hover:scale-105'>Currency Converter</button>
                         </Link>
+                        <Link to='https://drive.google.com/file/d/1DkKuqBWeNyR_XF7Hnd30kFGyfz-10OxT/view?usp=sharing'>
                         <button className='bg-transparent border text-white rounded-full px-6 py-3 mb-4 md:ml-3 md:mr-3 hover:bg-blue-700 hover:border-blue-700 hover:text-gray-200 transition duration-300 transform hover:scale-105'>Tugas Teori</button>
+                        </Link>
                     </div>
                 </div>
             </div>
