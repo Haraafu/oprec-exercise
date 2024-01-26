@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.home {
+  color: white;
+}
+
+.temperature {
+  color: black;
+  font-weight: 700;
+}
+
+.convForm td {
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+.convForm td:hover {
+  background-color: #eee;
+}
