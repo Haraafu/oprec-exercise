@@ -78,7 +78,7 @@ export default function Currency() {
             <div className='container flex justify-center'>
                 <div className='flex flex-col ml-7 md:mb-16 md:ml-40 md:mt-6'>
                     <div className='container flex flex-col w-80'>
-                        <Link to='/'>
+                        <Link to='/oprec-exercise/'>
                             <button className='bg-transparent border text-white rounded-full px-6 py-3 mb-4 md:mr-3 hover:bg-blue-700 hover:border-blue-700 hover:text-gray-200 transition duration-300 transform hover:scale-105'>Home</button>
                         </Link>
                         <div className='calcBox relative flex flex-col w-full h-96 bg-blue-300 bg-opacity-60 border border-blue-500 rounded-2xl p-6 mb-6 text-center shadow-lg'>
