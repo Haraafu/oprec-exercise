@@ -109,7 +109,7 @@ export default function Temperature() {
 
     return (
         <div className='temperature bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 min-h-screen flex items-center justify-center'>
-            <div className='container flex flex-row md:justify-center '>
+            <div className='container flex flex-col md:flex-row md:justify-center items-center'>
                 <div className='flex flex-col w-80 mt-10 md:mt-6'>
                     <Link to='/'>
                         <button className='bg-transparent border text-white rounded-full px-6 py-3 mb-4 md:mr-3 hover:bg-blue-700 hover:border-blue-700 hover:text-gray-200 transition duration-300 transform hover:scale-105'>Home</button>
@@ -238,7 +238,7 @@ export default function Temperature() {
                         </p>
                     </div>
                 </div>
-                <div className='convForm mb-10 ml-10 mt-4 md:mt-10 md:grid md:grid-cols-2 gap-x-9'>
+                <div className='convForm mb-10 md:ml-10 mt-4 md:mt-10 md:grid md:grid-cols-2 gap-x-9 md:flex-col'>
                     <h1 className='text-3xl font-bold text-center mb-4 md:mt-20 text-white'>Conversion Formula</h1>
                     <table className='celcius shadow-lg w-full'>
                         <thead>

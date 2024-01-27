@@ -75,7 +75,7 @@ export default function Currency() {
 
     return (
         <div className='currency bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 min-h-screen flex items-center'>
-            <div className='container flex justify-center'>
+            <div className='container flex flex-col md:flex-row md:justify-center items-center md:items-start p-[2.8rem]'>
                 <div className='flex flex-col ml-7 md:mb-16 md:ml-40 md:mt-6'>
                     <div className='container flex flex-col w-80'>
                         <Link to='/'>
