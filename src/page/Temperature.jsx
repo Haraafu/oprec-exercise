@@ -6,24 +6,48 @@ import '../index.css';
 export default function Temperature() {
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
-    const toggleDropdown1 = () => setIsOpen1(!isOpen1);
-    const toggleDropdown2 = () => setIsOpen2(!isOpen2);
-    
     const [selectedUnit1, setSelectedUnit1] = useState('Celcius (°C)');
     const [selectedUnit2, setSelectedUnit2] = useState('Fahrenheit (°F)');
+    const [inputVal, setInputVal] = useState('');
+    const [result, setResult] = useState({ value: null, unit: '' });
 
     const handleUnitChange1 = (unit) => {
-        setSelectedUnit1(unit); 
         setIsOpen1(false);
+        setSelectedUnit1((prevUnit1) => {
+            if (unit === selectedUnit2) {
+                setSelectedUnit2(prevUnit1);
+                return unit;
+            } else {
+                return unit;
+            }
+        });
     };
 
     const handleUnitChange2 = (unit) => {
-        setSelectedUnit2(unit);
         setIsOpen2(false);
+        setSelectedUnit2((prevUnit2) => {
+            if (unit === selectedUnit1) {
+                setSelectedUnit1(prevUnit2);
+                return unit;
+            } else {
+                return unit;
+            }
+        });
     };
 
-    const [inputVal, setInputVal] = useState('');
-    const [result, setResult] = useState({ value: null, unit: '' });
+    const toggleDropdown1 = () => {
+        setIsOpen1(!isOpen1);
+        if (isOpen2) {
+            setIsOpen2(false);
+        }
+    };
+    
+    const toggleDropdown2 = () => {
+        setIsOpen2(!isOpen2);
+        if (isOpen1) {
+            setIsOpen1(false);
+        }
+    };
 
     const handleInputChange = (e) => {
         setInputVal(e.target.value);
